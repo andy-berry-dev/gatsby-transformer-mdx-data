@@ -12,8 +12,15 @@
   ],
   "main": "index.js",
   "scripts": {
+    "prebuild": "rm -rf dist; mkdir dist; cp package.json yarn.lock dist/",
+    "build": "tsc -b",
+    "predevelop": "yarn prebuild",
+    "develop": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andy Berry <andy@teamberry.io> (https://andy-berry.co.uk/)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
 }
