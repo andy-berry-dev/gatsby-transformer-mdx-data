@@ -1,1 +1,1 @@
-export type Foo = "bar";
+export { type PluginOptions } from './gatsby-node';

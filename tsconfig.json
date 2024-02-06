@@ -11,10 +11,5 @@
         "skipLibCheck": true,
         "declaration": true
     },
-    "include": [
-        "./index.ts",
-        "./src/**/*",
-        "./gatsby-*.ts",
-        "./gatsby-*.tsx",
-    ],
+    "include": ["./index.ts", "./src/**/*", "./gatsby-*.ts", "./gatsby-*.tsx"]
 }
