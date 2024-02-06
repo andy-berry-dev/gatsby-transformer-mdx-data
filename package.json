@@ -1,0 +1,19 @@
+{
+  "name": "gatsby-transformer-mdx-data",
+  "version": "0.0.1",
+  "repository": "http://github.com/andy-berry-dev/gatsby-transformer-mdx-data",
+  "description": "A Gatsby plugin to transform MDX files so they can be rendered without requiring a page to be created. An example use case is using MDX files as a basic CMS.",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-transformer-plugin",
+    "markdown",
+    "mdx"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andy Berry <andy@teamberry.io> (https://andy-berry.co.uk/)",
+  "license": "ISC"
+}
