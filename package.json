@@ -1,26 +1,38 @@
 {
-  "name": "gatsby-transformer-mdx-data",
-  "version": "0.0.1",
-  "repository": "http://github.com/andy-berry-dev/gatsby-transformer-mdx-data",
-  "description": "A Gatsby plugin to transform MDX files so they can be rendered without requiring a page to be created. An example use case is using MDX files as a basic CMS.",
-  "keywords": [
-    "gatsby",
-    "gatsby-plugin",
-    "gatsby-transformer-plugin",
-    "markdown",
-    "mdx"
-  ],
-  "main": "index.js",
-  "scripts": {
-    "prebuild": "rm -rf dist; mkdir dist; cp package.json yarn.lock dist/",
-    "build": "tsc -b",
-    "predevelop": "yarn prebuild",
-    "develop": "tsc -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Andy Berry <andy@teamberry.io> (https://andy-berry.co.uk/)",
-  "license": "ISC",
-  "devDependencies": {
-    "typescript": "^5.3.3"
-  }
+    "name": "gatsby-transformer-mdx-data",
+    "version": "0.0.1",
+    "repository": "http://github.com/andy-berry-dev/gatsby-transformer-mdx-data",
+    "description": "A Gatsby plugin to transform MDX files so they can be rendered without requiring a page to be created. An example use case is using MDX files as a basic CMS.",
+    "keywords": [
+        "gatsby",
+        "gatsby-plugin",
+        "gatsby-transformer-plugin",
+        "markdown",
+        "mdx"
+    ],
+    "main": "index.js",
+    "scripts": {
+        "prebuild": "rm -rf dist; mkdir dist; cp package.json yarn.lock dist/",
+        "build": "tsc -b",
+        "predevelop": "yarn prebuild",
+        "develop": "tsc -w",
+        "typecheck": "tsc --noEmit",
+        "lint": "eslint .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Andy Berry <andy@teamberry.io> (https://andy-berry.co.uk/)",
+    "license": "ISC",
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^6.21.0",
+        "@typescript-eslint/parser": "^6.21.0",
+        "eslint": "^8.56.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-airbnb-typescript": "^17.1.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-jsx-a11y": "^6.8.0",
+        "eslint-plugin-prettier": "^5.1.3",
+        "prettier": "^3.2.5",
+        "typescript": "^5.3.3"
+    }
 }
