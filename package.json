@@ -23,6 +23,7 @@
     "author": "Andy Berry <andy@teamberry.io> (https://andy-berry.co.uk/)",
     "license": "ISC",
     "devDependencies": {
+        "@mdx-js/react": "^3.0.0",
         "@typescript-eslint/eslint-plugin": "^6.21.0",
         "@typescript-eslint/parser": "^6.21.0",
         "eslint": "^8.56.0",
@@ -35,6 +36,7 @@
         "gatsby": "^5.13.3",
         "gatsby-plugin-mdx": "^5.13.1",
         "prettier": "^3.2.5",
+        "react": "^18.2.0",
         "typescript": "^5.3.3"
     },
     "dependencies": {
@@ -42,6 +44,8 @@
         "lodash": "^4.17.21"
     },
     "peerDependencies": {
-        "gatsby-plugin-mdx": "^5.13.1"
+        "@mdx-js/react": "^3.0.0",
+        "gatsby-plugin-mdx": "^5.13.1",
+        "react": "^18.2.0"
     }
 }
