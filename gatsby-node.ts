@@ -30,7 +30,7 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = async (
         if (isNil(contentFilePath)) {
             return;
         }
-        const dataDirPath = pluginOptions.dataDirs.find((path) =>
+        const dataDirPath = (pluginOptions?.dataDirs || []).find((path) =>
             isParentDir(path, contentFilePath),
         );
         if (isNil(dataDirPath)) {
@@ -103,7 +103,7 @@ export const createResolvers: GatsbyNode['createResolvers'] = (
         return mdx?.processedMDX.toString();
     };
     create({
-        ...pluginOptions.dataDirs.reduce((config, datadirPath) => {
+        ...(pluginOptions?.dataDirs || []).reduce((config, datadirPath) => {
             const nodeType = createNodeTypeFromDataDir(datadirPath);
             return {
                 ...config,
